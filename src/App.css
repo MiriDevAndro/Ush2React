@@ -1,0 +1,143 @@
+*{
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid red; */
+}
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.img{
+  object-fit: cover;
+}
+
+.glass{
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+width: 70%;
+height: 90%;
+position: absolute;
+top: 5%;
+right: 15%;
+z-index: 1;
+/* position: relative;
+top: 10px;
+right: 10px;
+bottom: 10px;
+width: 40%;
+height: 90%; */
+}
+
+input{
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 0px 4px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+select{
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 0px 4px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+label{
+  margin: 4px;
+}
+
+.textabs{
+  position: absolute;
+  left: 10%;
+  bottom: 10px;
+  font-size: 4rem;
+  font-weight: bolder;
+}
+
+
+
+.buble1{
+  border-radius: 50%;
+  background-color: #439fab;
+  z-index: 1;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.buble2{
+  border-radius: 45% 55% 54% 34% / 53% 23% 45% 48%;
+  background-color: #439fab;
+  z-index: 1;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+}
+
+.buble3{
+  border-radius: 33% 67% 44% 56% / 49% 44% 56% 51%;
+  background-color: #439fab;
+  z-index: 1;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  right: 5%;
+  bottom: 20%;
+}
+
+label::after{
+
+  content: '*';
+  color: red;
+}
